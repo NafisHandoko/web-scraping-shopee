@@ -1,0 +1,1299 @@
+{
+    "error": 0,
+    "error_msg": "",
+    "data": {
+        "items": [
+            {
+                "orderid": 0,
+                "itemid": 23204869628,
+                "cmtid": 40012681791,
+                "ctime": 1746025371,
+                "rating": 1,
+                "userid": 256512717,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 5,
+                "status": 2,
+                "mtime": 1746025371,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746025371,
+                "author_username": "a*****d",
+                "author_portrait": "id-11134233-7ras9-m379iywh334vf1",
+                "author_shopid": 256511612,
+                "anonymous": true,
+                "product_items": [
+                    {
+                        "itemid": 23204869628,
+                        "shopid": 145589728,
+                        "name": "Kotak sabun sendok capucino besar plastik plus tutup",
+                        "image": "sg-11134201-22110-vqhbothhdqjvb5",
+                        "is_snapshot": 1,
+                        "snapshotid": 70045933718,
+                        "modelid": 193150649730,
+                        "model_name": "Tempat sendok Besar"
+                    }
+                ],
+                "editable_date": 1756393362,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 5,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 30,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Gold",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#E7AE21"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 21491056248,
+                "cmtid": 40012662985,
+                "ctime": 1746025246,
+                "rating": 1,
+                "userid": 519130313,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 5,
+                "status": 2,
+                "mtime": 1746025246,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746025246,
+                "author_username": "agusirawann_1986",
+                "author_portrait": "6de688693b2c6c3bc7a4b4e8bfaf02a5",
+                "author_shopid": 519110734,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 21491056248,
+                        "shopid": 145589728,
+                        "name": "Rak Mini segi susun 3 Flower - Rak bumbu kosmetik serbaguna",
+                        "image": "id-11134207-7qukz-ljguj759jlnr17",
+                        "is_snapshot": 1,
+                        "snapshotid": 75546294143,
+                        "modelid": 147483519097,
+                        "model_name": "Rak segi Flower"
+                    }
+                ],
+                "editable_date": 1755724898,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 5,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 10650960952,
+                "cmtid": 40012653171,
+                "ctime": 1746025178,
+                "rating": 1,
+                "userid": 1446446629,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 5,
+                "status": 2,
+                "mtime": 1746025178,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746025178,
+                "author_username": "w*****w",
+                "author_portrait": "",
+                "author_shopid": 1445693489,
+                "anonymous": true,
+                "product_items": [
+                    {
+                        "itemid": 10650960952,
+                        "shopid": 145589728,
+                        "name": "Mangkok stainless 14 cm 16 cm tebal - baskom stainless serbaguna grosir",
+                        "image": "id-11134207-7rasg-m1r54nug4m632f",
+                        "is_snapshot": 1,
+                        "snapshotid": 68549284873,
+                        "modelid": 140164516721,
+                        "model_name": "Mangkok 16 cm"
+                    }
+                ],
+                "editable_date": 1756330247,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 5,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 28264819580,
+                "cmtid": 40012589463,
+                "ctime": 1746024735,
+                "rating": 1,
+                "userid": 162093826,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 4,
+                "status": 2,
+                "mtime": 1746024735,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746024735,
+                "author_username": "chimuncyimung",
+                "author_portrait": "e7b388511d33153464554b0f294ce85f",
+                "author_shopid": 162091708,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 28264819580,
+                        "shopid": 145589728,
+                        "name": "Rak plastik susun 3 horraz capucino - Rak kosmetik bumbu serbaguna",
+                        "image": "id-11134207-7rasd-m1nmuc4vypbt51",
+                        "is_snapshot": 1,
+                        "snapshotid": 63060740862,
+                        "modelid": 256834669089,
+                        "model_name": "Rak horaz segi"
+                    }
+                ],
+                "editable_date": 1756392707,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 4
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 3913320949,
+                "cmtid": 40012566823,
+                "ctime": 1746024582,
+                "rating": 1,
+                "userid": 224145609,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 5,
+                "status": 2,
+                "mtime": 1746024582,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746024582,
+                "author_username": "nuzil",
+                "author_portrait": "72d785e8ef5d417106bf2e4ff2b8f807",
+                "author_shopid": 224141319,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 3913320949,
+                        "shopid": 145589728,
+                        "name": "Botol saos kecap memeclub tinggi 400 ml plastik grosir",
+                        "image": "sg-11134201-22110-8ii85mvkbqjvc0",
+                        "is_snapshot": 1,
+                        "snapshotid": 77060265239,
+                        "modelid": 173982129349,
+                        "model_name": "Meme club tinggi"
+                    }
+                ],
+                "editable_date": 1756392574,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 40,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Platinum",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#55586E"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 29250956547,
+                "cmtid": 40012538320,
+                "ctime": 1746024390,
+                "rating": 1,
+                "userid": 6981120,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 4,
+                "status": 2,
+                "mtime": 1746024390,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746024390,
+                "author_username": "c_cik",
+                "author_portrait": "59fb168b96d1778692f01030410886d6",
+                "author_shopid": 6979828,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 29250956547,
+                        "shopid": 145589728,
+                        "name": "kotak kancing panjang 20,5 cm lebar 4- 9 tinggi 4 cm - Tempat alat tulis serbaguna Suryaplast tebal",
+                        "image": "id-11134207-7r990-lvq3e6a78vpg61",
+                        "is_snapshot": 1,
+                        "snapshotid": 82051768280,
+                        "modelid": 166490825353,
+                        "model_name": "K kancing Panjang SS"
+                    }
+                ],
+                "editable_date": 1756392385,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 4
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 40,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Platinum",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#55586E"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 24381899148,
+                "cmtid": 40012538319,
+                "ctime": 1746024390,
+                "rating": 1,
+                "userid": 6981120,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 4,
+                "status": 2,
+                "mtime": 1746024390,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746024390,
+                "author_username": "c_cik",
+                "author_portrait": "59fb168b96d1778692f01030410886d6",
+                "author_shopid": 6979828,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 24381899148,
+                        "shopid": 145589728,
+                        "name": "(Isi 12pcs) Keranjang surat segi panjang sp - Tempat sendok alat tulis kantor plastik grosir",
+                        "image": "id-11134207-7rase-m10tb748ttm097",
+                        "is_snapshot": 1,
+                        "snapshotid": 62046220872,
+                        "modelid": 168444636839,
+                        "model_name": "12BJ KRJ SURAT SP"
+                    }
+                ],
+                "editable_date": 1756392385,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 4
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 40,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Platinum",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#55586E"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 21491056248,
+                "cmtid": 40012536141,
+                "ctime": 1746024375,
+                "rating": 1,
+                "userid": 1482397524,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 5,
+                "status": 2,
+                "mtime": 1746024375,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746024375,
+                "author_username": "rudiadiguna691",
+                "author_portrait": "id-11134233-7rbka-m6ks3wni7cqcb1",
+                "author_shopid": 1481617169,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 21491056248,
+                        "shopid": 145589728,
+                        "name": "Rak Mini segi susun 3 Flower - Rak bumbu kosmetik serbaguna",
+                        "image": "id-11134207-7qukz-ljguj759jlnr17",
+                        "is_snapshot": 1,
+                        "snapshotid": 38401703757,
+                        "modelid": 147483519097,
+                        "model_name": "Rak segi Flower"
+                    }
+                ],
+                "editable_date": 1751029271,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 5,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 29314709869,
+                "cmtid": 40012490839,
+                "ctime": 1746024077,
+                "rating": 1,
+                "userid": 840671876,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 5,
+                "status": 2,
+                "mtime": 1746024077,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746024077,
+                "author_username": "mxe6o4nx4j",
+                "author_portrait": "",
+                "author_shopid": 840674761,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 29314709869,
+                        "shopid": 145589728,
+                        "name": "Tempat sendok alat tulis gandeng moly coklat grosir",
+                        "image": "id-11134207-7rasd-m1mcjnobde1o57",
+                        "is_snapshot": 1,
+                        "snapshotid": 75047305947,
+                        "modelid": 148841848903,
+                        "model_name": "Tempat sendok moly"
+                    }
+                ],
+                "editable_date": 1756392065,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 16495112531,
+                "cmtid": 40012457545,
+                "ctime": 1746023860,
+                "rating": 1,
+                "userid": 432311930,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 5,
+                "status": 2,
+                "mtime": 1746023860,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746023860,
+                "author_username": "hani_sulistiani99",
+                "author_portrait": "2ad47b382a1cfa14d3d0b38f3cb19f0e",
+                "author_shopid": 432292353,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 16495112531,
+                        "shopid": 145589728,
+                        "name": "Eskan ceret segi 4,1 liter wapolin jumbo plastik",
+                        "image": "id-11134207-7rasb-m1r00g9wmn1a4c",
+                        "is_snapshot": 1,
+                        "snapshotid": 76064390922,
+                        "modelid": 217912866904,
+                        "model_name": "Eskan 4,1 SEGI,Random"
+                    }
+                ],
+                "editable_date": 1756391850,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 5,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 30,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Gold",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#E7AE21"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 28054688499,
+                "cmtid": 40012311109,
+                "ctime": 1746022953,
+                "rating": 1,
+                "userid": 141301093,
+                "shopid": 145589728,
+                "comment": "Ukuran:ok\nDesain:ok\nKualitas Bahan:ok\n\nOk",
+                "rating_star": 5,
+                "status": 2,
+                "mtime": 1746022953,
+                "editable": 1,
+                "opt": 2,
+                "filter": 1,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746022953,
+                "author_username": "ariniandams",
+                "author_portrait": "2153257ed9268293a531bddb86485711",
+                "author_shopid": 141299269,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 28054688499,
+                        "shopid": 145589728,
+                        "name": "Basi prasmanan segi brokoli capucino plus tutup grosir",
+                        "image": "id-11134207-7r98x-lxe54eoka2wa25",
+                        "is_snapshot": 1,
+                        "snapshotid": 70546023082,
+                        "modelid": 59440061348,
+                        "model_name": "Basi segi brokoli"
+                    }
+                ],
+                "editable_date": 1755431540,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 30,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Gold",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#E7AE21"
+                },
+                "template_tags": [
+                    "Ukuran",
+                    "Desain",
+                    "Kualitas Bahan"
+                ],
+                "has_template_tag": true,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_tag_hints": [
+                    {
+                        "template_tag": "Ukuran"
+                    },
+                    {
+                        "template_tag": "Desain"
+                    },
+                    {
+                        "template_tag": "Kualitas Bahan"
+                    }
+                ],
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 27215916002,
+                "cmtid": 40012293760,
+                "ctime": 1746022850,
+                "rating": 1,
+                "userid": 1304907656,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 5,
+                "status": 2,
+                "mtime": 1746022850,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746022850,
+                "author_username": "umisaroh865",
+                "author_portrait": "",
+                "author_shopid": 1304354826,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 27215916002,
+                        "shopid": 145589728,
+                        "name": "Wakul tutup hajatan coklat turki ukuran 12 dan 14 plastik",
+                        "image": "id-11134207-7rasl-m1yd5wl4gk9cc6",
+                        "is_snapshot": 1,
+                        "snapshotid": 65045317668,
+                        "modelid": 205508746305,
+                        "model_name": "Wakul turki 12 kecil"
+                    }
+                ],
+                "editable_date": 1756390841,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 28264819580,
+                "cmtid": 40012252447,
+                "ctime": 1746022606,
+                "rating": 1,
+                "userid": 884983696,
+                "shopid": 145589728,
+                "comment": "Ukuran:pas\nDesain:lucu, mungil\nInstalasi:mudah",
+                "rating_star": 5,
+                "status": 2,
+                "mtime": 1746022606,
+                "editable": 1,
+                "opt": 2,
+                "filter": 1,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746022606,
+                "author_username": "6tlj104qfm",
+                "author_portrait": "",
+                "author_shopid": 884943449,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 28264819580,
+                        "shopid": 145589728,
+                        "name": "Rak plastik susun 3 horraz capucino - Rak kosmetik bumbu serbaguna",
+                        "image": "id-11134207-7rasd-m1nmuc4vypbt51",
+                        "is_snapshot": 1,
+                        "snapshotid": 63060740862,
+                        "modelid": 256834669089,
+                        "model_name": "Rak horaz segi"
+                    }
+                ],
+                "editable_date": 1756390535,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 5,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "template_tags": [
+                    "Ukuran",
+                    "Desain",
+                    "Instalasi"
+                ],
+                "has_template_tag": true,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_tag_hints": [
+                    {
+                        "template_tag": "Ukuran"
+                    },
+                    {
+                        "template_tag": "Desain"
+                    },
+                    {
+                        "template_tag": "Instalasi"
+                    }
+                ],
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 28414764389,
+                "cmtid": 40012251258,
+                "ctime": 1746022599,
+                "rating": 1,
+                "userid": 121814899,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 4,
+                "status": 2,
+                "mtime": 1746022599,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746022599,
+                "author_username": "yuliielyana",
+                "author_portrait": "6b3e1c4a6e194ff3e2826e7031c80839",
+                "author_shopid": 121813075,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 28414764389,
+                        "shopid": 145589728,
+                        "name": "Hanger anak plastik benmore 1 pak isi 6pcs grosir",
+                        "image": "id-11134207-7rasl-m1ms8dwcl9ypf5",
+                        "is_snapshot": 1,
+                        "snapshotid": 77061550634,
+                        "modelid": 256831165134,
+                        "model_name": "Hngr benmore coklat"
+                    }
+                ],
+                "editable_date": 1756390592,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 4,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 24401409219,
+                "cmtid": 40012251257,
+                "ctime": 1746022599,
+                "rating": 1,
+                "userid": 121814899,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 4,
+                "status": 2,
+                "mtime": 1746022599,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746022599,
+                "author_username": "yuliielyana",
+                "author_portrait": "6b3e1c4a6e194ff3e2826e7031c80839",
+                "author_shopid": 121813075,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 24401409219,
+                        "shopid": 145589728,
+                        "name": "Sendok makan stainless berat 15 gram grosir per 1 lusin (12pcs)",
+                        "image": "id-11134207-7r991-loarle4t9yc3cb",
+                        "is_snapshot": 1,
+                        "snapshotid": 78049089834,
+                        "modelid": 194759849370,
+                        "model_name": "12bj Sendok biasa"
+                    }
+                ],
+                "editable_date": 1756390592,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 4,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 10642388195,
+                "cmtid": 40012251253,
+                "ctime": 1746022599,
+                "rating": 1,
+                "userid": 121814899,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 4,
+                "status": 2,
+                "mtime": 1746022599,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746022599,
+                "author_username": "yuliielyana",
+                "author_portrait": "6b3e1c4a6e194ff3e2826e7031c80839",
+                "author_shopid": 121813075,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 10642388195,
+                        "shopid": 145589728,
+                        "name": "Keset sumbu kecil tebal - keset kain serbaguna grosir",
+                        "image": "a7777e81c523f63e9fb00597d4e49233",
+                        "is_snapshot": 1,
+                        "snapshotid": 58546121617,
+                        "modelid": 112091722193,
+                        "model_name": "Keset sumbu kecil"
+                    }
+                ],
+                "editable_date": 1756390592,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 4,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 9319243650,
+                "cmtid": 40012251251,
+                "ctime": 1746022599,
+                "rating": 1,
+                "userid": 121814899,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 4,
+                "status": 2,
+                "mtime": 1746022599,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746022599,
+                "author_username": "yuliielyana",
+                "author_portrait": "6b3e1c4a6e194ff3e2826e7031c80839",
+                "author_shopid": 121813075,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 9319243650,
+                        "shopid": 145589728,
+                        "name": "Erus kuah stainless doll - centong sayur bulet grosir",
+                        "image": "71a097d43d8e6731b967ee1b90470790",
+                        "is_snapshot": 1,
+                        "snapshotid": 83047839291,
+                        "modelid": 99654318052,
+                        "model_name": "Erus DoLL"
+                    }
+                ],
+                "editable_date": 1756390592,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 4,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 7234375376,
+                "cmtid": 40012251247,
+                "ctime": 1746022599,
+                "rating": 1,
+                "userid": 121814899,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 4,
+                "status": 2,
+                "mtime": 1746022599,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746022599,
+                "author_username": "yuliielyana",
+                "author_portrait": "6b3e1c4a6e194ff3e2826e7031c80839",
+                "author_shopid": 121813075,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 7234375376,
+                        "shopid": 145589728,
+                        "name": "(1 pcs) Lap serbet warna dapur kotak kotak tebal ukuran besar 51x51 cm - grosir lap termurah",
+                        "image": "9ae181db8c4405c8c3e2b934d81ce1e1",
+                        "is_snapshot": 1,
+                        "snapshotid": 67057579844,
+                        "modelid": 18085341548,
+                        "model_name": "1bj Lap_warna acak"
+                    }
+                ],
+                "editable_date": 1756390592,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 4,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 3913320949,
+                "cmtid": 40012251246,
+                "ctime": 1746022599,
+                "rating": 1,
+                "userid": 121814899,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 4,
+                "status": 2,
+                "mtime": 1746022599,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746022599,
+                "author_username": "yuliielyana",
+                "author_portrait": "6b3e1c4a6e194ff3e2826e7031c80839",
+                "author_shopid": 121813075,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 3913320949,
+                        "shopid": 145589728,
+                        "name": "Botol saos kecap memeclub tinggi 400 ml plastik grosir",
+                        "image": "sg-11134201-22110-8ii85mvkbqjvc0",
+                        "is_snapshot": 1,
+                        "snapshotid": 77060265239,
+                        "modelid": 173982129349,
+                        "model_name": "Meme club tinggi"
+                    }
+                ],
+                "editable_date": 1756390592,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 4,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            },
+            {
+                "orderid": 0,
+                "itemid": 2388610884,
+                "cmtid": 40012251244,
+                "ctime": 1746022599,
+                "rating": 1,
+                "userid": 121814899,
+                "shopid": 145589728,
+                "comment": "",
+                "rating_star": 4,
+                "status": 2,
+                "mtime": 1746022599,
+                "editable": 1,
+                "opt": 2,
+                "filter": 0,
+                "is_hidden": false,
+                "can_follow_up": true,
+                "submit_time": 1746022599,
+                "author_username": "yuliielyana",
+                "author_portrait": "6b3e1c4a6e194ff3e2826e7031c80839",
+                "author_shopid": 121813075,
+                "anonymous": false,
+                "product_items": [
+                    {
+                        "itemid": 2388610884,
+                        "shopid": 145589728,
+                        "name": "(12 pcs) Garpu makan stainless steel murah grosir",
+                        "image": "6f242eb57bc4625f5791baa0812d7c87",
+                        "is_snapshot": 1,
+                        "snapshotid": 63046985389,
+                        "modelid": 111281939924,
+                        "model_name": "12bj garpu"
+                    }
+                ],
+                "editable_date": 1756390592,
+                "sync_to_social": false,
+                "detailed_rating": {
+                    "product_quality": 4,
+                    "seller_service": 5,
+                    "delivery_service": 5,
+                    "driver_service": 5
+                },
+                "exclude_scoring_due_low_logistic": false,
+                "loyalty_info": {
+                    "tier_code": 20,
+                    "user_tier_badge_url": "https://loyalty.shopee.co.id",
+                    "tier_text": "Member Silver",
+                    "user_tier_badge_text_color": "#FFFFFF",
+                    "user_tier_badge_background_color": "#ABB2BA"
+                },
+                "has_template_tag": false,
+                "sip_info": {
+                    "is_oversea": false,
+                    "origin_region": "id"
+                },
+                "overall_fit": 0,
+                "is_normal_item": true,
+                "is_super_review": false,
+                "is_newly_created": false,
+                "template_abt": "bucket_a",
+                "is_repeat_edited": false,
+                "super_review_status": 0,
+                "algo_template_abt": "shuffle_hint"
+            }
+        ]
+    }
+}
