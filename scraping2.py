@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import time  # Untuk menambahkan jeda waktu
 import pandas as pd  # Untuk pengolahan data
+import os  # Untuk clear terminal
 
 # URL halaman ulasan Shopee yang akan di-scrape
 url = 'https://shopee.co.id/buyer/145591552/rating?shop_id=145589728'
@@ -34,11 +35,20 @@ time.sleep(5)  # Tunggu hingga halaman dimuat sepenuhnya
 # Inisialisasi list kosong untuk menyimpan data yang di-scrape
 data = []
 page = 1
-max_pages = 20  # Jumlah maksimum halaman yang akan di-scrape
+target_reviews = 20  # Jumlah target ulasan yang ingin dikumpulkan
 
-# Loop scraping utama - lanjutkan sampai mencapai max_pages atau tidak dapat menemukan halaman lagi
-while page <= max_pages:
-    print(f"Scraping page {page}")
+# Loop scraping utama - lanjutkan sampai mencapai target_reviews atau tidak dapat menemukan halaman lagi
+while len(data) < target_reviews:
+    # Clear terminal
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
+    # Tampilkan progress yang lebih jelas
+    print("=" * 50)
+    print(f"Progress Scraping:")
+    print(f"Halaman: {page}")
+    print(f"Data terkumpul: {len(data)}/{target_reviews} ulasan")
+    print("=" * 50)
+    
     # Berikan waktu agar konten dinamis dimuat
     time.sleep(3)
 
@@ -60,7 +70,7 @@ while page <= max_pages:
 
         # Ekstrak info waktu dan varian
         time_text = time_variant.text.strip().split(" | ")[0]
-        variant_name = time_variant.text.strip().split(" | ")[1]
+        variant_name = time_variant.text.strip().split(" | ")[1] if len(time_variant.text.strip().split(" | ")) > 1 else "No variant"
         # Ekstrak detail produk
         product_name = product_element.text.strip()
         product_url = product_element['href']
@@ -77,37 +87,39 @@ while page <= max_pages:
             })
             
     try:
-        if page < max_pages:
-            # Coba berbagai selektor untuk tombol halaman berikutnya - ini menangani variasi UI yang berbeda
-            next_button = None
+        # Cek apakah kita sudah mencapai target jumlah ulasan
+        if len(data) >= target_reviews:
+            print(f"Reached target number of reviews ({target_reviews})")
+            break
+            
+        # Coba berbagai selektor untuk tombol halaman berikutnya - ini menangani variasi UI yang berbeda
+        next_button = None
+        try:
+            # Percobaan pertama: cari tombol dengan "Laman berikutnya"
+            next_button = driver.find_element(By.CSS_SELECTOR, "button[aria-label^='Laman berikutnya']")
+        except NoSuchElementException:
             try:
-                # Percobaan pertama: cari tombol dengan "Laman berikutnya"
-                next_button = driver.find_element(By.CSS_SELECTOR, "button[aria-label^='Laman berikutnya']")
+                # Percobaan kedua: cari tombol panah kanan
+                next_button = driver.find_element(By.CSS_SELECTOR, "button.shopee-icon-button--right")
             except NoSuchElementException:
                 try:
-                    # Percobaan kedua: cari tombol panah kanan
-                    next_button = driver.find_element(By.CSS_SELECTOR, "button.shopee-icon-button--right")
-                except NoSuchElementException:
-                    try:
-                        # Percobaan ketiga: periksa semua tombol pagination untuk yang memiliki "next" atau "right" di kelas
-                        pagination_buttons = driver.find_elements(By.CSS_SELECTOR, "div.shopee-page-controller button")
-                        for button in pagination_buttons:
-                            if "next" in button.get_attribute("class").lower() or "right" in button.get_attribute("class").lower():
-                                next_button = button
-                                break
-                    except:
-                        pass
-            
-            # Jika kita menemukan tombol berikutnya dan dapat diklik, pindah ke halaman selanjutnya
-            if next_button and next_button.is_enabled():
-                next_button.click()
-                print(f"Navigated to page {page + 1}")
-                time.sleep(3)  # Tunggu halaman berikutnya dimuat
-            else:
-                print("No more pages available or next button not found")
-                break
+                    # Percobaan ketiga: periksa semua tombol pagination untuk yang memiliki "next" atau "right" di kelas
+                    pagination_buttons = driver.find_elements(By.CSS_SELECTOR, "div.shopee-page-controller button")
+                    for button in pagination_buttons:
+                        if "next" in button.get_attribute("class").lower() or "right" in button.get_attribute("class").lower():
+                            next_button = button
+                            break
+                except:
+                    pass
+        
+        # Jika kita menemukan tombol berikutnya dan dapat diklik, pindah ke halaman selanjutnya
+        if next_button and next_button.is_enabled():
+            next_button.click()
+            print(f"Navigated to page {page + 1}")
+            time.sleep(3)  # Tunggu halaman berikutnya dimuat
         else:
-            print(f"Reached maximum number of pages ({max_pages})")
+            print("No more pages available or next button not found")
+            break
     except Exception as e:
         print(f"Error navigating to next page: {str(e)}")
         break
