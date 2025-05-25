@@ -35,7 +35,7 @@ time.sleep(5)  # Tunggu hingga halaman dimuat sepenuhnya
 # Inisialisasi list kosong untuk menyimpan data yang di-scrape
 data = []
 page = 1
-target_reviews = 5  # Jumlah target ulasan yang ingin dikumpulkan
+target_reviews = 600  # Jumlah target ulasan yang ingin dikumpulkan
 
 # Loop scraping utama - lanjutkan sampai mencapai target_reviews atau tidak dapat menemukan halaman lagi
 while len(data) < target_reviews:
@@ -87,19 +87,27 @@ while len(data) < target_reviews:
             # Ambil semua teks dari div utama dan div-div di dalamnya
             all_texts = [text.strip() for text in main_review_div.stripped_strings]
             
-            # Filter teks yang hanya berisi label (seperti "Desain:", "Kualitas:", dll)
-            # dan teks yang merupakan duplikat dari bagian sebelumnya
+            # Filter teks yang hanya berisi label dan teks yang merupakan duplikat
             filtered_texts = []
             seen_labels = set()
             
             for text in all_texts:
-                # Skip jika teks hanya berisi label atau duplikat
-                if any(label in text for label in ["Desain:", "Kualitas:", "Ukuran:", "Warna:", "Ketebalan:", "Durabilitas:", "Keaslian:", "Kualitas Bahan:"]):
+                # Skip jika teks berisi label (ditandai dengan diakhiri titik dua)
+                # atau jika teks terlalu pendek (kurang dari 3 karakter)
+                if text.strip().endswith(":") or len(text.strip()) < 3:
+                    continue
+                # Skip jika teks hanya berisi satu kata (biasanya label)
+                if len(text.strip().split()) <= 1:
                     continue
                 if text not in filtered_texts:
-                    filtered_texts.append(text)
+                    # Bersihkan teks dari enter dan spasi berlebih
+                    cleaned_text = " ".join(text.split())
+                    filtered_texts.append(cleaned_text)
             
-            review_text = ". ".join(filtered_texts)
+            # Gabungkan semua teks dengan titik dan bersihkan spasi berlebih
+            review_text = ". ".join(filtered_texts).strip()
+            # Hapus titik berurutan jika ada
+            review_text = ".".join(filter for filter in review_text.split(".") if filter.strip())
             
         # Tambahkan data yang diekstrak ke list kita
         if review_text:  # Hanya tambahkan jika ada review text
