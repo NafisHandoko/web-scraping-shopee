@@ -35,7 +35,7 @@ time.sleep(5)  # Tunggu hingga halaman dimuat sepenuhnya
 # Inisialisasi list kosong untuk menyimpan data yang di-scrape
 data = []
 page = 1
-target_reviews = 20  # Jumlah target ulasan yang ingin dikumpulkan
+target_reviews = 5  # Jumlah target ulasan yang ingin dikumpulkan
 
 # Loop scraping utama - lanjutkan sampai mencapai target_reviews atau tidak dapat menemukan halaman lagi
 while len(data) < target_reviews:
@@ -74,16 +74,28 @@ while len(data) < target_reviews:
         # Ekstrak detail produk
         product_name = product_element.text.strip()
         product_url = product_element['href']
-        # Periksa apakah elemen ulasan ada dan memiliki style yang diharapkan
-        if review_element and 'position: relative' in review_element.get('style', ''):
-            # Tambahkan data yang diekstrak ke list kita
+        
+        # Perbaikan ekstraksi review text
+        review_text = ""
+        review_divs = review.select("div.shopee-product-rating__time + div, div.shopee-product-rating__time + div div")
+        if review_divs:
+            # Gabungkan semua teks review dan pisahkan dengan titik
+            review_parts = []
+            for div in review_divs:
+                text = div.text.strip()
+                if text and text not in review_parts:  # Hindari duplikasi
+                    review_parts.append(text)
+            review_text = ". ".join(review_parts)
+            
+        # Tambahkan data yang diekstrak ke list kita
+        if review_text:  # Hanya tambahkan jika ada review text
             data.append({
                 "product_name": product_name,
                 "product_url": product_url,
                 "time_text": time_text,
                 "rating_count": rating_count,
                 "variant_name": variant_name,
-                "review_text": review_element.text.strip()
+                "review_text": review_text
             })
             
     try:
