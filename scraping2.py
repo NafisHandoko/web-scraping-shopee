@@ -73,6 +73,9 @@ while len(data) < target_reviews:
         variant_name = time_variant.text.strip().split(" | ")[1] if len(time_variant.text.strip().split(" | ")) > 1 else "No variant"
         # Ekstrak detail produk
         product_name = product_element.text.strip()
+        # Hapus bagian variasi dari product_name
+        if "Variasi:" in product_name:
+            product_name = product_name.split("Variasi:")[0].strip()
         product_url = product_element['href']
         
         # Perbaikan ekstraksi review text
