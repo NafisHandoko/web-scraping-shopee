@@ -77,15 +77,26 @@ while len(data) < target_reviews:
         
         # Perbaikan ekstraksi review text
         review_text = ""
-        review_divs = review.select("div.shopee-product-rating__time + div, div.shopee-product-rating__time + div div")
+        review_divs = review.select("div.shopee-product-rating__time + div")
         if review_divs:
-            # Gabungkan semua teks review dan pisahkan dengan titik
-            review_parts = []
-            for div in review_divs:
-                text = div.text.strip()
-                if text and text not in review_parts:  # Hindari duplikasi
-                    review_parts.append(text)
-            review_text = ". ".join(review_parts)
+            # Ambil div review utama
+            main_review_div = review_divs[0]
+            # Ambil semua teks dari div utama dan div-div di dalamnya
+            all_texts = [text.strip() for text in main_review_div.stripped_strings]
+            
+            # Filter teks yang hanya berisi label (seperti "Desain:", "Kualitas:", dll)
+            # dan teks yang merupakan duplikat dari bagian sebelumnya
+            filtered_texts = []
+            seen_labels = set()
+            
+            for text in all_texts:
+                # Skip jika teks hanya berisi label atau duplikat
+                if any(label in text for label in ["Desain:", "Kualitas:", "Ukuran:", "Warna:", "Ketebalan:", "Durabilitas:", "Keaslian:", "Kualitas Bahan:"]):
+                    continue
+                if text not in filtered_texts:
+                    filtered_texts.append(text)
+            
+            review_text = ". ".join(filtered_texts)
             
         # Tambahkan data yang diekstrak ke list kita
         if review_text:  # Hanya tambahkan jika ada review text
