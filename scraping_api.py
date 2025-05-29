@@ -10,8 +10,8 @@ def save_data(data, csv_file="shopee_reviews.csv", excel_file="shopee_reviews.xl
         
     # Buat DataFrame dari data baru
     df_new = pd.DataFrame(data, columns=[
-        "username", "comment", "rating", "submit_time", 
-        "model_name", "product_name"
+        "author_username", "model_name", "product_name", 
+        "rating_star", "comment", "submit_time"
     ])
     
     # Untuk CSV
@@ -25,16 +25,16 @@ def save_data(data, csv_file="shopee_reviews.csv", excel_file="shopee_reviews.xl
     # Simpan ke CSV
     df_combined.to_csv(csv_file, index=False)
     
-    # # Untuk Excel
-    # if os.path.exists(excel_file):
-    #     # Jika file sudah ada, baca file lama dan gabungkan dengan data baru
-    #     df_old = pd.read_excel(excel_file)
-    #     df_combined = pd.concat([df_old, df_new], ignore_index=True)
-    # else:
-    #     df_combined = df_new
+    # Untuk Excel
+    if os.path.exists(excel_file):
+        # Jika file sudah ada, baca file lama dan gabungkan dengan data baru
+        df_old = pd.read_excel(excel_file)
+        df_combined = pd.concat([df_old, df_new], ignore_index=True)
+    else:
+        df_combined = df_new
     
-    # # Simpan ke Excel
-    # df_combined.to_excel(excel_file, index=False)
+    # Simpan ke Excel
+    df_combined.to_excel(excel_file, index=False)
     
     print(f"Data tersimpan ke {csv_file} dan {excel_file}")
 
@@ -42,7 +42,7 @@ url = "https://shopee.co.id/api/v4/seller_operation/get_shop_ratings_new"
 
 shopid = 145589728
 userid = 145591552
-limit = 10  # Maksimum limit per request
+limit = 100  # Maksimum limit per request
 offset = 0
 itemid = 28414764389
 
@@ -55,7 +55,7 @@ params = {
 }
 
 data = []
-target_reviews = 10  # Jumlah target ulasan yang ingin dikumpulkan
+target_reviews = 1000  # Jumlah target ulasan yang ingin dikumpulkan
 
 session = requests.Session()
 session.headers.update({
@@ -130,12 +130,12 @@ while len(data) < target_reviews:
                 product_name = product_items[0].get('name', '') if product_items else ""
                 
                 batch_data.append({
-                    "username": item['author_username'],
-                    "comment": comment,
-                    "rating": item['rating_star'],
-                    "submit_time": submit_time,
+                    "author_username": item['author_username'],
                     "model_name": model_name,
-                    "product_name": product_name
+                    "product_name": product_name,
+                    "rating_star": item['rating_star'],
+                    "comment": comment,
+                    "submit_time": submit_time
                 })
             except Exception as e:
                 print(f"Warning: Error processing item: {str(e)}")
