@@ -10,7 +10,7 @@ def save_data(data, csv_file="shopee_reviews.csv", excel_file="shopee_reviews.xl
         
     # Buat DataFrame dari data baru
     df_new = pd.DataFrame(data, columns=[
-        "author_username", "model_name", "product_name", 
+        "cmtid", "author_username", "model_name", "product_name", 
         "rating_star", "comment", "submit_time"
     ])
     
@@ -42,7 +42,7 @@ url = "https://shopee.co.id/api/v4/seller_operation/get_shop_ratings_new"
 
 shopid = 145589728
 userid = 145591552
-limit = 3  # Maksimum limit per request
+limit = 5  # Maksimum limit per request
 offset = 0
 # itemid = 28414764389
 
@@ -55,11 +55,11 @@ params = {
 }
 
 data = []
-target_reviews = 3  # Jumlah target ulasan yang ingin dikumpulkan
+target_reviews = 1000  # Jumlah target ulasan yang ingin dikumpulkan
 
 session = requests.Session()
 session.headers.update({
-    'Cookie': '_gcl_au=1.1.307313397.1746255068; _fbp=fb.2.1746255068099.25272698245431466; _QPWSDCXHZQA=0dd632c7-7e11-4832-d574-ca6586fbb90f; REC7iLP4Q=e1719331-e580-418f-8f4a-e9844355bb5e; REC_T_ID=fe92ab86-27ea-11f0-a19e-2e541f10bb14; SPC_F=jKMiIHEY4dwQ1JZ9G0r9dUt29C46nCAv; __LOCALE__null=ID; _med=affiliates; csrftoken=yQ4VpIfhcQX7Ah5k9H9hX4eKwumdWx6W; _sapid=64752649b8c933216128ea4b9c97a005a2e369c1dfa09d1fe75d20c8; SPC_CLIENTID=jKMiIHEY4dwQ1JZ9ixpkyberunjqvyvw; SPC_ST=.OGZhSkNNUG51Z2I1YU1GOUA3qYFqMZvzJOd68BfumjiXe/MoKWJKLsdenJqWb2AaCf139mh9fwusHYpLL89f8xdRXlM9Tfeoe7lx7xA4gVCxw5Kf21tSwz9iJ0djeF0D36RuaGvLGAjyks59uKXrYJg552ISWvApNNb3puZaWqfJJN1Pa/PhQXrgOOJIBLr3dG81pPJK7flQGUcWcuMzvAdF19klANmf+sdxnDIsmqNzhCV4Fz71RWkeSLtBdkg1GmSNcbXbRSTOQarAOoT4hw==; SPC_U=644695807; SPC_R_T_ID=pj0ojbcEO5WyJEk5xdEDDRN3RqARrj2J29nFNVomQB263HbZI9ybPeVN0l0Q4SScPAHUvwMWLhoYrs4DQH2sLP4/9j41rfKH+IFDehH5qg2t8yJPYYHemBdDW77G7RWoOX64c+x1Sbe/RHQSmXfpCKsHas6sFL5IXw5rMkt6Gf0=; SPC_R_T_IV=TWN6bVl2SjNydlJHYnVGSA==; SPC_T_ID=pj0ojbcEO5WyJEk5xdEDDRN3RqARrj2J29nFNVomQB263HbZI9ybPeVN0l0Q4SScPAHUvwMWLhoYrs4DQH2sLP4/9j41rfKH+IFDehH5qg2t8yJPYYHemBdDW77G7RWoOX64c+x1Sbe/RHQSmXfpCKsHas6sFL5IXw5rMkt6Gf0=; SPC_T_IV=TWN6bVl2SjNydlJHYnVGSA==; SPC_CDS_CHAT=f8550895-a1e8-4ad6-b64e-958dc3613350; SPC_IA=1; SPC_SI=kJUuaAAAAABKeWxpQzYyev5qtAAAAAAARmhVUExuT0k=; _gid=GA1.3.1581922160.1748479596; SPC_SEC_SI=v1-Rmo5aGxNZHU2Y3hHWHEyUO5wvtcoXXqYOie+M9UzBVfUY6aJBagAuzhBJgj0uL9poPMh9/sjzCwqDcf5/EG+bwAdOIzoEA8cFUzTC0nGhE8=; AMP_TOKEN=%24NOT_FOUND; _ga=GA1.3.1820688933.1747467912; shopee_webUnique_ccd=6Jmh6FjTUYqpyguhIimKfg%3D%3D%7C0WDqV0%2FjHeCsrW%2BkLgw5ir1iDkR3ZdfRQkAAKTI%2FSteqnmly%2BfItizQzrRSk2Dwsi%2FxEJpUiuVk%3D%7CiNB0CcLPmfmbcdQa%7C08%7C3; ds=8b89ba8577b6e2b12631667648056a8a; _ga_SW6D8G0HXK=GS2.1.s1748593044$o20$g1$t1748593068$j36$l0$h0; SPC_EC=.ZThNWmdxUlJWT2NKcGhoYs9dvjKS+Bdw8kTXXGsrd8nvHMx34RFLsi2R0E5t9luM5yFxEjf7zUq5rSZB3FpgmnxPOK76ckln0K00AwvWLaguqSTEUDTPG2yWXh8ruonPXMWfWVgHTT5AxSfdluVnORog2owFB0BeLcreIXIXoXP5Qc3Yb25DmctaUmlE4HiIazBA66jYWz0Iq/nq2umZXjv0b+UHaNbmT7qDegcbooHWDo19QerMKYg9q/TZ0TFctlEps5CQ0DNbjD5UBOhy9A=='
+    'Cookie': '_gcl_au=1.1.307313397.1746255068; _fbp=fb.2.1746255068099.25272698245431466; _QPWSDCXHZQA=0dd632c7-7e11-4832-d574-ca6586fbb90f; REC7iLP4Q=e1719331-e580-418f-8f4a-e9844355bb5e; REC_T_ID=fe92ab86-27ea-11f0-a19e-2e541f10bb14; SPC_F=jKMiIHEY4dwQ1JZ9G0r9dUt29C46nCAv; __LOCALE__null=ID; _med=affiliates; csrftoken=yQ4VpIfhcQX7Ah5k9H9hX4eKwumdWx6W; _sapid=64752649b8c933216128ea4b9c97a005a2e369c1dfa09d1fe75d20c8; SPC_CLIENTID=jKMiIHEY4dwQ1JZ9ixpkyberunjqvyvw; SPC_ST=.OGZhSkNNUG51Z2I1YU1GOUA3qYFqMZvzJOd68BfumjiXe/MoKWJKLsdenJqWb2AaCf139mh9fwusHYpLL89f8xdRXlM9Tfeoe7lx7xA4gVCxw5Kf21tSwz9iJ0djeF0D36RuaGvLGAjyks59uKXrYJg552ISWvApNNb3puZaWqfJJN1Pa/PhQXrgOOJIBLr3dG81pPJK7flQGUcWcuMzvAdF19klANmf+sdxnDIsmqNzhCV4Fz71RWkeSLtBdkg1GmSNcbXbRSTOQarAOoT4hw==; SPC_U=644695807; SPC_R_T_ID=pj0ojbcEO5WyJEk5xdEDDRN3RqARrj2J29nFNVomQB263HbZI9ybPeVN0l0Q4SScPAHUvwMWLhoYrs4DQH2sLP4/9j41rfKH+IFDehH5qg2t8yJPYYHemBdDW77G7RWoOX64c+x1Sbe/RHQSmXfpCKsHas6sFL5IXw5rMkt6Gf0=; SPC_R_T_IV=TWN6bVl2SjNydlJHYnVGSA==; SPC_T_ID=pj0ojbcEO5WyJEk5xdEDDRN3RqARrj2J29nFNVomQB263HbZI9ybPeVN0l0Q4SScPAHUvwMWLhoYrs4DQH2sLP4/9j41rfKH+IFDehH5qg2t8yJPYYHemBdDW77G7RWoOX64c+x1Sbe/RHQSmXfpCKsHas6sFL5IXw5rMkt6Gf0=; SPC_T_IV=TWN6bVl2SjNydlJHYnVGSA==; SPC_CDS_CHAT=f8550895-a1e8-4ad6-b64e-958dc3613350; SPC_IA=1; SPC_SI=kJUuaAAAAABKeWxpQzYyev5qtAAAAAAARmhVUExuT0k=; _gid=GA1.3.1581922160.1748479596; SPC_SEC_SI=v1-Rmo5aGxNZHU2Y3hHWHEyUO5wvtcoXXqYOie+M9UzBVfUY6aJBagAuzhBJgj0uL9poPMh9/sjzCwqDcf5/EG+bwAdOIzoEA8cFUzTC0nGhE8=; AMP_TOKEN=%24NOT_FOUND; AC_CERT_D=U2FsdGVkX18/VdFtRDwTNUTXes27ok1YI87haL2lJHMD0+UQB1riqKQw2BpauoTEDacvThOyRMbDCC72LwQj+DLeN6r70kLSEjphcl1mpoVdpGcNMomDIdp6iRJgbpl0a+DuP6s6cyFIYgDAmU+SHENxhF/7fWCfAhLIMUXdC9GQz9Z/DKi34ACqqlZvMtsqngGjfIgicJlBV4+80EdCElsxmWPRq8xARZPplDw9ZaiXaxIoHxT4o1qxvpOn2rWFnhU9jdK32/lmO49o4UTuGrLvU9lL+gaAQsKDn+zYRboB/1oDKzMobzzxcsG9W2FB6yWVONSApUfpUBekzvUNKGP9Opwcmn/d1se0fKbZqX5LOlmBqmN1KAJyRI6boZKqPoePGvaz4MvRjC4qpRgexlbaXrSIW9Hgj19IrLSCx6dWlmkJp5a6zcpG8+LzTVUWnJXQ/1aTWFl3Nkv58c+q0SfgdV8HWSZJshTJT6ySkr3RsrhQ2fl55k7Ce5//9EBYIBYmEi6ruWjVqXUNDFbMK5/VAIfPCXoIEFbFJyT/UQN2Gk4OHSkPF4GQUw1rmC4IB9XFBvCcz1g8SKWX/7iPpzXofIOh6ogque5mtJw6I7VMdgV25AwuzaDtrqMuTC2WGjYlk9HT5COrx0yASdOxyarQjO03zcyBEa9c9tq+bsvpFvxMk6FlFwc5JM4Un9nlp2ZxtMKsGfqXufzqkP0BJ856sZfX0uCze1dhmlsUPHZElwDlLCPbVJidUq9DBUN7IZTtIeBn+UntjUbo9+fZK1FpxPLVhcHuE2YpKCVIFPpWJ05+b4I2SKxy+YtIeCj9Nn0u0ge9O/E5fXMmjxDVv5PqCzdQaXjUeguG3r3rWf9uFg5b+xOaFNUVS1WnlhR2IBvUxx+VxOVIIE2EsbAXdXcAfVEedstCC8Fqy2/0k1PPveDhiOgGjc6GAY5ru+bjf2rHkF+VQF8hO0tcMfytGZANPahuF9WGj4/udf4vH+p0Pxk3kVFo5KbjFHAPWy9kAeVzS46FUVdfzG+mcxWdcado6T3vNh8LLeVofqsGPEhqmZX06SVRzfHNd3q3UTK+0u/SOSt7KC0NmQ9iNruzwyqMBUtjttTHMEHneEasKbg=; _ga=GA1.3.1820688933.1747467912; shopee_webUnique_ccd=l4rzl3fe%2FTmjniicsKIqDQ%3D%3D%7C3mDqV0%2FjHeCsrW%2BkLgw5ir1iDkR3ZdfRQkAAKXmTV9eqnmly%2BfItizQzrRSk2Dwsi%2FxEJpUiuVk%3D%7CiNB0CcLPmfmbcdQa%7C08%7C3; ds=50d0b79f7a7d8843a60f61e5226e2951; _ga_SW6D8G0HXK=GS2.1.s1748593044$o20$g1$t1748595253$j60$l0$h0; SPC_EC=.YlZoQlBLZDVxRmpqSGNZTk91EUhl3EqvoluDe4MXv42OCidtn7Ou2cj8XE7vbnb2gTjZXxICbF5rRYHECiqZxuNYMByvJJYtbS6HdsULFW9zK9N2VIvuQhku4ojty6PHMo7WPaR1dFW02WOk6EGyUVhkVXCGSb1gk3dDKSHtBami1lvxbMv9DApzfzV9n9iUzqrBK7ajRcQZcfaD96g4ZYTBOUHyKhvsLoosXxCwNG2v/l2QWn9ur9nGhe0R8lkV2ula/bVqHBWzlDy9qbcoFQ=='
 })
 
 print("Memulai pengumpulan data...")
@@ -127,6 +127,7 @@ while len(data) < target_reviews:
                 product_name = product_items[0].get('name', '') if product_items else ""
                 
                 batch_data.append({
+                    "cmtid": item['cmtid'],
                     "author_username": item['author_username'],
                     "model_name": model_name,
                     "product_name": product_name,
