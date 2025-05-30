@@ -42,24 +42,24 @@ url = "https://shopee.co.id/api/v4/seller_operation/get_shop_ratings_new"
 
 shopid = 145589728
 userid = 145591552
-limit = 100  # Maksimum limit per request
+limit = 3  # Maksimum limit per request
 offset = 0
-itemid = 28414764389
+# itemid = 28414764389
 
 params = {
     'limit': limit,
     'offset': offset,
     'shopid': shopid,
-    'userid': userid,
-    'itemid': itemid
+    'userid': userid
+    # 'itemid': itemid
 }
 
 data = []
-target_reviews = 1000  # Jumlah target ulasan yang ingin dikumpulkan
+target_reviews = 3  # Jumlah target ulasan yang ingin dikumpulkan
 
 session = requests.Session()
 session.headers.update({
-    'Cookie': '_gcl_au=1.1.307313397.1746255068; _gid=GA1.3.1581922160.1748479596; _ga=GA1.3.1820688933.1747467912; SPC_IA=1; SPC_EC=.eXBIMTFWSXhzQnZaamlPTmWcJUxSSrngTeoNTQBJMVCQr4Wgxa0zwhmu3euo0tdCRyJ2hoC5eBdiemsKuVPiENGRh6zhe37RKj9/2Bl3fOhLbZmLF2BX1YDrQSFZEsvYqY1T8VTst5DRoHoq5l1x0ZQd6v142BS/bmtty98ERL0g++iHJ7L3v0Zh8Mxxq/G6DhO88lLwqmtvrl5bdVYoYM/YlOl2TQmCPggtq51dpDOG4zjblIN310DTJRdB3vJ/aIukNbtAE5yAIGm7qlEJaQ==; SPC_F=jKMiIHEY4dwQ1JZ9G0r9dUt29C46nCAv; SPC_U=644695807; SPC_T_ID=pj0ojbcEO5WyJEk5xdEDDRN3RqARrj2J29nFNVomQB263HbZI9ybPeVN0l0Q4SScPAHUvwMWLhoYrs4DQH2sLP4/9j41rfKH+IFDehH5qg2t8yJPYYHemBdDW77G7RWoOX64c+x1Sbe/RHQSmXfpCKsHas6sFL5IXw5rMkt6Gf0='
+    'Cookie': '_gcl_au=1.1.307313397.1746255068; _fbp=fb.2.1746255068099.25272698245431466; _QPWSDCXHZQA=0dd632c7-7e11-4832-d574-ca6586fbb90f; REC7iLP4Q=e1719331-e580-418f-8f4a-e9844355bb5e; REC_T_ID=fe92ab86-27ea-11f0-a19e-2e541f10bb14; SPC_F=jKMiIHEY4dwQ1JZ9G0r9dUt29C46nCAv; __LOCALE__null=ID; _med=affiliates; csrftoken=yQ4VpIfhcQX7Ah5k9H9hX4eKwumdWx6W; _sapid=64752649b8c933216128ea4b9c97a005a2e369c1dfa09d1fe75d20c8; SPC_CLIENTID=jKMiIHEY4dwQ1JZ9ixpkyberunjqvyvw; SPC_ST=.OGZhSkNNUG51Z2I1YU1GOUA3qYFqMZvzJOd68BfumjiXe/MoKWJKLsdenJqWb2AaCf139mh9fwusHYpLL89f8xdRXlM9Tfeoe7lx7xA4gVCxw5Kf21tSwz9iJ0djeF0D36RuaGvLGAjyks59uKXrYJg552ISWvApNNb3puZaWqfJJN1Pa/PhQXrgOOJIBLr3dG81pPJK7flQGUcWcuMzvAdF19klANmf+sdxnDIsmqNzhCV4Fz71RWkeSLtBdkg1GmSNcbXbRSTOQarAOoT4hw==; SPC_U=644695807; SPC_R_T_ID=pj0ojbcEO5WyJEk5xdEDDRN3RqARrj2J29nFNVomQB263HbZI9ybPeVN0l0Q4SScPAHUvwMWLhoYrs4DQH2sLP4/9j41rfKH+IFDehH5qg2t8yJPYYHemBdDW77G7RWoOX64c+x1Sbe/RHQSmXfpCKsHas6sFL5IXw5rMkt6Gf0=; SPC_R_T_IV=TWN6bVl2SjNydlJHYnVGSA==; SPC_T_ID=pj0ojbcEO5WyJEk5xdEDDRN3RqARrj2J29nFNVomQB263HbZI9ybPeVN0l0Q4SScPAHUvwMWLhoYrs4DQH2sLP4/9j41rfKH+IFDehH5qg2t8yJPYYHemBdDW77G7RWoOX64c+x1Sbe/RHQSmXfpCKsHas6sFL5IXw5rMkt6Gf0=; SPC_T_IV=TWN6bVl2SjNydlJHYnVGSA==; SPC_CDS_CHAT=f8550895-a1e8-4ad6-b64e-958dc3613350; SPC_IA=1; SPC_SI=kJUuaAAAAABKeWxpQzYyev5qtAAAAAAARmhVUExuT0k=; _gid=GA1.3.1581922160.1748479596; SPC_SEC_SI=v1-Rmo5aGxNZHU2Y3hHWHEyUO5wvtcoXXqYOie+M9UzBVfUY6aJBagAuzhBJgj0uL9poPMh9/sjzCwqDcf5/EG+bwAdOIzoEA8cFUzTC0nGhE8=; AMP_TOKEN=%24NOT_FOUND; _ga=GA1.3.1820688933.1747467912; shopee_webUnique_ccd=6Jmh6FjTUYqpyguhIimKfg%3D%3D%7C0WDqV0%2FjHeCsrW%2BkLgw5ir1iDkR3ZdfRQkAAKTI%2FSteqnmly%2BfItizQzrRSk2Dwsi%2FxEJpUiuVk%3D%7CiNB0CcLPmfmbcdQa%7C08%7C3; ds=8b89ba8577b6e2b12631667648056a8a; _ga_SW6D8G0HXK=GS2.1.s1748593044$o20$g1$t1748593068$j36$l0$h0; SPC_EC=.ZThNWmdxUlJWT2NKcGhoYs9dvjKS+Bdw8kTXXGsrd8nvHMx34RFLsi2R0E5t9luM5yFxEjf7zUq5rSZB3FpgmnxPOK76ckln0K00AwvWLaguqSTEUDTPG2yWXh8ruonPXMWfWVgHTT5AxSfdluVnORog2owFB0BeLcreIXIXoXP5Qc3Yb25DmctaUmlE4HiIazBA66jYWz0Iq/nq2umZXjv0b+UHaNbmT7qDegcbooHWDo19QerMKYg9q/TZ0TFctlEps5CQ0DNbjD5UBOhy9A=='
 })
 
 print("Memulai pengumpulan data...")
@@ -113,13 +113,10 @@ while len(data) < target_reviews:
                     
                 comment = item['comment'].strip()
                 
-                # Skip jika comment kosong
-                if not comment:
-                    continue
-                    
-                # Bersihkan comment dari enter dan double enter
-                comment = ". ".join(comment.split('\n'))  # Ganti semua whitespace dengan spasi tunggal
-                comment = ". ".join(filter(None, comment.split(". ")))  # Bersihkan titik berurutan
+                # Bersihkan comment dari enter dan double enter jika ada
+                if comment:
+                    comment = ". ".join(comment.split('\n'))  # Ganti semua whitespace dengan spasi tunggal
+                    comment = ". ".join(filter(None, comment.split(". ")))  # Bersihkan titik berurutan
                 
                 # Format waktu
                 submit_time = datetime.fromtimestamp(item['submit_time']).strftime('%Y-%m-%d %H:%M:%S')
@@ -153,6 +150,7 @@ while len(data) < target_reviews:
         
     except Exception as e:
         print(f"Error saat mengambil data: {str(e)}")
+        print(response.text)
         break
 
 print(f"\nPengumpulan data selesai. Total data terkumpul: {len(data)}")
